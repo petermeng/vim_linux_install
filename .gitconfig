@@ -40,20 +40,14 @@
   untracked = cyan
 [diff]
   tool=vimdiff
-[user]
-	name = xiangning.meng
-	email = xiangning.meng@sim.com
 [http]
 	sslverify = false
-	proxy = http://172.21.6.137:808
 [core]
     autocrlf = false
     filemode = false
     safecrlf = false
     editor = vim
     whitespace = cr-at-eol
-[https]
-	proxy = https://172.21.6.137:808
 [commit]
     template = ~/Documents/gitconfig/git-commit-template
 [push]
