@@ -1,0 +1,60 @@
+[alias]
+  mg=merge --squash
+  la=log --all --graph --decorate
+  ls=log --graph --decorate
+  stat=status -uno
+  co=checkout
+  ci=commit
+  smg=cherry-pick -n
+  br=branch
+  md=commit --amend
+  dt=difftool
+  mt=mergetool
+  cf=config
+  line=log --oneline
+  latest=for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short) [%(committername)]'
+  lg=log --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
+  hist=log --pretty=format:\"%C(yellow)%h %C(red)%d %C(reset)%s %C(green)[%an] %C(blue)%ad\" --topo-order --graph --date=short
+  type=cat-file -t
+  dump=cat-file -p
+  gp=grep -n
+
+[color]
+  status = auto
+  branch = auto
+  diff = auto
+  ui = true
+  pager = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[diff]
+  tool=vimdiff
+[user]
+	name = xiangning.meng
+	email = xiangning.meng@sim.com
+[http]
+	sslverify = false
+	proxy = http://172.21.6.137:808
+[core]
+    autocrlf = false
+    filemode = false
+    safecrlf = false
+    editor = vim
+    whitespace = cr-at-eol
+[https]
+	proxy = https://172.21.6.137:808
+[commit]
+    template = ~/Documents/gitconfig/git-commit-template
+[push]
+	default = matching
