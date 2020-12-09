@@ -18,7 +18,6 @@
 #===============================================================================
 
 set -o nounset                                  # Treat unset variables as an error
-read -p "Please input password:" password
 cd ~/Documents/
 if [ -d "~/Documents/vim" ];then
     echo "has vim"
@@ -27,8 +26,8 @@ else
 fi
 cd ~/Documents/vim
 git pull
-echo $password | sudo -S apt-get update
-echo $password | sudo -S apt-get install -y libncurses5-dev libgnome2-dev libgnomeui-dev \
+sudo apt-get update
+sudo apt-get install -y libncurses5-dev libgnome2-dev libgnomeui-dev \
     libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
     libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
     python3-dev ruby-dev lua5.1 liblua5.1-dev libperl-dev git dos2unix sed cscope id-utils exuberant-ctags fontconfig \
@@ -54,7 +53,7 @@ if [[ ${pythonName} ]]; then
         fi
     fi
 fi
-echo $password | sudo -S ./configure --with-features=huge \
+sudo ./configure --with-features=huge \
             --enable-multibyte \
             --enable-rubyinterp=yes \
             --enable-pythoninterp=yes \
@@ -68,12 +67,12 @@ echo $password | sudo -S ./configure --with-features=huge \
 make -j4 VIMRUNTIMEDIR=/usr/share/vim/vim82
 
 
-echo $password | sudo -S make install
+sudo make install
 
-echo $password | sudo -S update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
-echo $password | sudo -S update-alternatives --set editor /usr/bin/vim
-echo $password | sudo -S update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
-echo $password | sudo -S update-alternatives --set vi /usr/bin/vim
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
+sudo update-alternatives --set editor /usr/bin/vim
+sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
+sudo update-alternatives --set vi /usr/bin/vim
 
 cd ~/Documents
 if [ -d "~/Documents/main" ];then
@@ -110,3 +109,13 @@ cp ./fonts/Droid\ Sans\ Mono\ Nerd\ Font\ Complete.otf ~/.local/share/fonts
 fc-cache -vf ~/.local/share/fonts
 ~/Documents/main/unix/vim.sh +PlugInstall +qa
 find ~/Documents/main/vimfiles/bundle -name "*.vim" | xargs dos2unix
+vimPlugsFolder=~/Documents/main/vimfiles/bundle
+if [ -f "${vimPlugsFolder}/git-support/plugin/git-support.vim" ];then
+    sed -i 's/command  -nargs/command! -nargs/g' ${vimPlugsFolder}/git-support/plugin/git-support.vim
+fi
+if [ -f "${vimPlugsFolder}/bufexplorer/plugin/bufexplorer.vim" ];then
+    sed -i 's/<Leader>bs :BufEx/<Leader>bss :BufEx/g' ${vimPlugsFolder}/bufexplorer/plugin/bufexplorer.vim
+fi
+if [ -f "${vimPlugsFolder}/vim-mark/plugin/mark.vim" ];then
+    sed -i 's/<Leader>\/ <Plug>/<Leader>\/\/ <Plug>/g' ${vimPlugsFolder}/vim-mark/plugin/mark.vim
+fi
