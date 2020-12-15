@@ -18,6 +18,7 @@
 #===============================================================================
 
 set -o nounset                                  # Treat unset variables as an error
+selfpath=$(cd "$(dirname "$0")"; pwd) 
 cd ~/Documents/
 if [ -d "~/Documents/vim" ];then
     echo "has vim"
@@ -103,6 +104,7 @@ else
     echo "alias myvim='~/Documents/main/unix/vim.sh'" >> ~/.bashrc
 fi
 source ~/.bashrc
+cd ${selfpath}
 mkdir -p ~/.local/share/fonts
 rm -rf ~/.local/share/fonts/Droid\ Sans\ Mono\ Nerd\ Font\ Complete.otf
 cp ./fonts/Droid\ Sans\ Mono\ Nerd\ Font\ Complete.otf ~/.local/share/fonts
