@@ -121,3 +121,6 @@ fi
 if [ -f "${vimPlugsFolder}/vim-mark/plugin/mark.vim" ];then
     sed -i 's/<Leader>\/ <Plug>/<Leader>\/\/ <Plug>/g' ${vimPlugsFolder}/vim-mark/plugin/mark.vim
 fi
+if [ -f "${vimPlugsFolder}/vim-plugins/autoload/mmtemplates/core.vim" ];then
+    sed -i 's/let jump_key = \'<C-d>\'/let jump_key = \'<C-S-l>\'/g' ${vimPlugsFolder}/vim-plugins/autoload/mmtemplates/core.vim
+fi
