@@ -90,6 +90,9 @@ fi
 if [ ! -d "~/.undo_history" ];then
     mkdir ~/.undo_history
 fi
+if [ ! -d "~/.session_history/" ];then
+    mkdir ~/.session_history
+fi
 mkdir ${vimplugFolder}/autoload/
 cp ${vimplugFolder}/plug.vim ${vimplugFolder}/autoload/
 chmod 777 ~/Documents/main/unix/gvim.sh
