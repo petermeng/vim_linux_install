@@ -87,6 +87,9 @@ if [ -d "${vimplugFolder}" ];then
 else
     git clone https://github.com/junegunn/vim-plug.git ${vimplugFolder}
 fi
+if [ ! -d "~/.undo_history" ];then
+    mkdir ~/.undo_history
+fi
 mkdir ${vimplugFolder}/autoload/
 cp ${vimplugFolder}/plug.vim ${vimplugFolder}/autoload/
 chmod 777 ~/Documents/main/unix/gvim.sh
