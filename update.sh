@@ -28,23 +28,30 @@ sudo apt-get install -y libncurses5-dev libgnome2-dev libgnomeui-dev \
 make distclean
 pythonName=`find /usr/lib/python3.* -maxdepth 0 -type d`
 if [[ ${pythonName} ]]; then
-    pythonConfigFolder=`ls ${pythonName} | grep "config-"`
-    if [[ ${pythonConfigFolder} ]]; then
-        python3Folder="${pythonName}/${pythonConfigFolder}"
-        if [ -d "${python3Folder}" ];then
-            echo ${python3Folder}
-        fi
-    fi
+    for line in ${pythonName}
+    do
+      pythonConfigFolder=`ls ${line} | grep "config-"`
+      if [[ ${pythonConfigFolder} ]]; then
+          python3Folder="${line}/${pythonConfigFolder}"
+          if [ -d "${python3Folder}" ];then
+              echo ${python3Folder}
+              break
+          fi
+      fi
+    done
 fi
 pythonName=`find /usr/lib/python2.* -maxdepth 0 -type d`
 if [[ ${pythonName} ]]; then
-    pythonConfigFolder=`ls ${pythonName} | grep "config-"`
-    if [[ ${pythonConfigFolder} ]]; then
-        python2Folder="${pythonName}/${pythonConfigFolder}"
-        if [ -d "${python2Folder}" ];then
-            echo ${python2Folder}
-        fi
-    fi
+    for line in ${pythonName}
+    do
+      pythonConfigFolder=`ls ${line} | grep "config-"`
+      if [[ ${pythonConfigFolder} ]]; then
+          python2Folder="${line}/${pythonConfigFolder}"
+          if [ -d "${python2Folder}" ];then
+              echo ${python2Folder}
+          fi
+      fi
+    done
 fi
 sudo ./configure --with-features=huge \
             --enable-multibyte \
