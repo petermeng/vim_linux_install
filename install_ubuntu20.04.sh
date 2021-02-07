@@ -18,7 +18,7 @@
 #===============================================================================
 
 set -o nounset                                  # Treat unset variables as an error
-selfpath=$(cd "$(dirname "$0")"; pwd)
+selfpath=$(cd "$(dirname "$0")"; pwd) 
 cd ~/Documents/
 if [ -d "~/Documents/vim" ];then
     echo "has vim"
@@ -28,11 +28,7 @@ fi
 cd ~/Documents/vim
 git pull
 sudo apt-get update
-sudo apt-get install -y libncurses5-dev libgnome2-dev libgnomeui-dev \
-    libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
-    libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
-    python3-dev ruby-dev lua5.1 liblua5.1-dev libperl-dev git dos2unix sed cscope id-utils exuberant-ctags fontconfig \
-    libncurses5-dev silversearcher-ag gawk
+sudo apt-get install -y libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 liblua5.1-0-dev libperl-dev git dos2unix sed cscope id-utils exuberant-ctags fontconfig language-pack-zh-hans libncurses5-dev exuberant-ctags silversearcher-ag gawk
 make distclean
 pythonName=`find /usr/lib/python3.* -maxdepth 0 -type d`
 if [[ ${pythonName} ]]; then
@@ -108,6 +104,12 @@ if [ $? -eq 0 ];then
     echo "has myvim"
 else
     echo "alias myvim='~/Documents/main/unix/vim.sh'" >> ~/.bashrc
+fi
+grep -l "export GTK_NATIVE_WINDOWS=1" ~/.bashrc
+if [ $? -eq 0 ];then
+    echo "has GTK config"
+else
+    echo "export GTK_NATIVE_WINDOWS=1" >> ~/.bashrc
 fi
 source ~/.bashrc
 cd ${selfpath}
