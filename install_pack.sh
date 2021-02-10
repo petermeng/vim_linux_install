@@ -49,6 +49,15 @@ fi
 # install i3
 sudo apt-get install i3 -y
 
+# install i3-gaps
+sudo add-apt-repository ppa:kgilmer/speed-ricer
+sudo apt-get update
+sudo apt-get install -y i3-gaps
+sudo apt-get install -y compton
+
+# install xfce4 xfce4-power-manager
+sudo apt-get install -y xfce4 xfce4-power-manager
+
 # install tmux
 if [ !-d "~/Documents/tmux" ]; then
     cd ~/Documents/
@@ -71,11 +80,6 @@ fi
 cd alacritty
 sudo apt-get install -y fonts-firacode
 cargo install alacritty
-
-# install i3-gaps
-sudo add-apt-repository ppa:kgilmer/speed-ricer
-sudo apt-get update
-sudo apt-get install -y i3-gaps
 
 # install polabar
 sudo apt-get install build-essential git cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev

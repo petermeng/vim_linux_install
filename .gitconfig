@@ -48,7 +48,13 @@
     safecrlf = false
     editor = vim
     whitespace = cr-at-eol
-[commit]
-    template = ~/Documents/gitconfig/git-commit-template
+#[commit]
+#    template = ~/Documents/gitconfig/git-commit-template
 [push]
-	default = matching
+    default = matching
+[core]
+    gitproxy = gitproxy
+[http]
+    proxy = http://192.168.5.107:808
+[https]
+    proxy = https://192.168.5.107:808
