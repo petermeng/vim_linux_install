@@ -1,0 +1,10 @@
+0
+/home/michael/.config/variety/Downloaded/Bing/OHR.VosgesBioReserve_ZH-CN4762694302_1920x1080.jpg
+/home/michael/.config/variety/Downloaded/Unsplash/photo-1612286350087-116a6b734781.jpg
+/home/michael/.config/variety/Downloaded/Unsplash/photo-1610819910784-f3294716f56a.jpg
+/home/michael/.config/variety/Downloaded/Unsplash/photo-1611149043085-c4d0a79304c6.jpg
+/home/michael/.config/variety/Downloaded/Bing/OHR.SuperbOwl_ZH-CN5028336455_1920x1080.jpg
+/home/michael/.config/variety/Downloaded/Unsplash/photo-1611765811741-da4da796ae32.jpg
+/home/michael/.config/variety/Downloaded/Unsplash/photo-1610387507619-f415e50fb37c.jpg
+/home/michael/.config/variety/Downloaded/nasa_apod/DistortedSunrise_Chasiotis_2442.jpg
+/usr/share/backgrounds/warty-final-ubuntu.png

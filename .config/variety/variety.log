@@ -1,0 +1,532 @@
+INFO: 2021-02-09 22:36:59,664: main() 'Using profile folder /home/michael/.config/variety/'
+INFO: 2021-02-09 22:36:59,686: perform_upgrade() 'Last run version was 0.8.3 or earlier, current version is 0.8.3'
+INFO: 2021-02-09 22:37:00,104: process_command() 'Received command: []'
+INFO: 2021-02-09 22:37:00,112: load_banned() 'Missing or invalid banned URLs list, no URLs will be banned'
+INFO: 2021-02-09 22:37:00,142: start() 'Using data_path /usr/share/variety'
+INFO: 2021-02-09 22:37:00,142: load() 'Jumble loading'
+INFO: 2021-02-09 22:37:00,150: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3/dist-packages/variety/plugins/builtin/__init__.py'
+INFO: 2021-02-09 22:37:00,159: _walk_modules() 'Jumble loading module in QuotationsPageSource from /usr/lib/python3/dist-packages/variety/plugins/builtin/quotes/QuotationsPageSource.py'
+INFO: 2021-02-09 22:37:00,183: load() 'Jumble found plugin class: <class 'QuotationsPageSource.QuotationsPageSource'>: {'name': 'TheQuotationsPage.com', 'description': 'Fetches quotes from TheQuotationsPage.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,184: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3/dist-packages/variety/plugins/builtin/quotes/__init__.py'
+INFO: 2021-02-09 22:37:00,191: _walk_modules() 'Jumble loading module in LocalFilesSource from /usr/lib/python3/dist-packages/variety/plugins/builtin/quotes/LocalFilesSource.py'
+INFO: 2021-02-09 22:37:00,193: load() 'Jumble found plugin class: <class 'LocalFilesSource.LocalFilesSource'>: {'name': 'Local text files', 'description': 'Displays quotes, defined in local text files.\nPut your own txt files in: ~/.config/variety/pluginconfig/quotes/.\nThe file format is:\n\nquote -- author\n.\nsecond quote -- another author\n.\netc...\n\nExample: http://rvelthuis.de/zips/quotes.txt', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,195: _walk_modules() 'Jumble loading module in UrbanDictionarySource from /usr/lib/python3/dist-packages/variety/plugins/builtin/quotes/UrbanDictionarySource.py'
+INFO: 2021-02-09 22:37:00,197: load() 'Jumble found plugin class: <class 'UrbanDictionarySource.UrbanDictionarySource'>: {'name': 'Urban Dictionary', 'description': 'Displays definitions from Urban Dictionary', 'author': 'James Miller', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,202: _walk_modules() 'Jumble loading module in GoodreadsSource from /usr/lib/python3/dist-packages/variety/plugins/builtin/quotes/GoodreadsSource.py'
+INFO: 2021-02-09 22:37:00,204: load() 'Jumble found plugin class: <class 'GoodreadsSource.GoodreadsSource'>: {'name': 'Goodreads', 'description': 'Fetches quotes from Goodreads.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,205: _walk_modules() 'Jumble loading module in FortuneSource from /usr/lib/python3/dist-packages/variety/plugins/builtin/quotes/FortuneSource.py'
+INFO: 2021-02-09 22:37:00,210: load() 'Jumble found plugin class: <class 'FortuneSource.FortuneSource'>: {'name': 'UNIX fortune program', 'description': 'Displays quotes using the UNIX fortune program. You may want to install additional fortune packs, e.g. fortunes-bofh-excuses.', 'author': 'Dan Jones', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,213: _walk_modules() 'Jumble loading module in RedditDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/RedditDownloader.py'
+INFO: 2021-02-09 22:37:00,218: _walk_modules() 'Jumble loading module in RedditSource from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/RedditSource.py'
+INFO: 2021-02-09 22:37:00,224: load() 'Jumble found plugin class: <class 'RedditSource.RedditSource'>: {'name': 'RedditSource', 'description': 'Configurable source for fetching images from Reddit', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,225: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/__init__.py'
+INFO: 2021-02-09 22:37:00,226: _walk_modules() 'Jumble loading module in DesktopprDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/DesktopprDownloader.py'
+INFO: 2021-02-09 22:37:00,228: load() 'Jumble found plugin class: <class 'DesktopprDownloader.DesktopprDownloader'>: {'name': 'DesktopprDownloader', 'description': 'Random wallpapers from Desktoppr.co', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,232: _walk_modules() 'Jumble loading module in ChromeOSWallpapersDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/ChromeOSWallpapersDownloader.py'
+INFO: 2021-02-09 22:37:00,237: load() 'Jumble found plugin class: <class 'ChromeOSWallpapersDownloader.ChromeOSWallpapersDownloader'>: {'name': 'ChromeOsWallpapersDownloader', 'description': 'Chrome OS Wallpapers', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,238: _walk_modules() 'Jumble loading module in WallhavenDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py'
+INFO: 2021-02-09 22:37:00,241: _walk_modules() 'Jumble loading module in WallhavenSource from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/WallhavenSource.py'
+INFO: 2021-02-09 22:37:00,243: load() 'Jumble found plugin class: <class 'WallhavenSource.WallhavenSource'>: {'name': 'MediaRSSSource', 'description': 'Configurable source for fetching images from Wallhaven.cc', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,245: _walk_modules() 'Jumble loading module in MediaRSSSource from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/MediaRSSSource.py'
+INFO: 2021-02-09 22:37:00,250: load() 'Jumble found plugin class: <class 'MediaRSSSource.MediaRSSSource'>: {'name': 'MediaRSSSource', 'description': 'Configurable source for fetching images from MediaRSS feeds', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,251: _walk_modules() 'Jumble loading module in EarthviewDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/EarthviewDownloader.py'
+INFO: 2021-02-09 22:37:00,254: load() 'Jumble found plugin class: <class 'EarthviewDownloader.EarthviewDownloader'>: {'name': 'EarthviewDownloader', 'description': 'Google Earth View Wallpapers', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,256: _walk_modules() 'Jumble loading module in UnsplashDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/UnsplashDownloader.py'
+INFO: 2021-02-09 22:37:00,258: load() 'Jumble found plugin class: <class 'UnsplashDownloader.UnsplashDownloader'>: {'name': 'UnsplashDownloader', 'description': 'High-resolution photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,260: _walk_modules() 'Jumble loading module in BingDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/BingDownloader.py'
+INFO: 2021-02-09 22:37:00,262: load() 'Jumble found plugin class: <class 'BingDownloader.BingDownloader'>: {'name': 'BingDownloader', 'description': 'Bing Photo of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,263: _walk_modules() 'Jumble loading module in APODDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/APODDownloader.py'
+INFO: 2021-02-09 22:37:00,264: load() 'Jumble found plugin class: <class 'APODDownloader.APODDownloader'>: {'name': 'APODDownloader', 'description': 'NASA Astro Pic of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,266: _walk_modules() 'Jumble loading module in MediaRSSDownloader from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/MediaRSSDownloader.py'
+INFO: 2021-02-09 22:37:00,268: _walk_modules() 'Jumble loading module in UnsplashConfigurableSource from /usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/UnsplashConfigurableSource.py'
+INFO: 2021-02-09 22:37:00,274: load() 'Jumble found plugin class: <class 'UnsplashConfigurableSource.UnsplashConfigurableSource'>: {'name': 'UnsplashConfigurableSource', 'description': 'Configurable source for fetching photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2021-02-09 22:37:00,286: reload_config() 'Creating new downloader for type flickr, location user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
+INFO: 2021-02-09 22:37:00,287: reload_config() 'Creating new downloader for type apod, location NASA's Astronomy Picture of the Day'
+INFO: 2021-02-09 22:37:00,287: reload_config() 'Creating new downloader for type bing, location Bing Photo of the Day'
+INFO: 2021-02-09 22:37:00,287: reload_config() 'Creating new downloader for type chromeos, location Chrome OS Wallpapers'
+INFO: 2021-02-09 22:37:00,287: reload_config() 'Creating new downloader for type desktoppr, location Random wallpapers from Desktoppr.co'
+INFO: 2021-02-09 22:37:00,287: reload_config() 'Creating new downloader for type earthview, location Google Earth View Wallpapers'
+INFO: 2021-02-09 22:37:00,287: reload_config() 'Creating new downloader for type unsplash, location High-resolution photos from Unsplash.com'
+INFO: 2021-02-09 22:37:00,295: log_options() 'Loaded options:'
+INFO: 2021-02-09 22:37:00,295: log_options() 'change_enabled = True'
+INFO: 2021-02-09 22:37:00,296: log_options() 'change_interval = 300'
+INFO: 2021-02-09 22:37:00,296: log_options() 'change_on_start = False'
+INFO: 2021-02-09 22:37:00,296: log_options() 'clipboard_enabled = False'
+INFO: 2021-02-09 22:37:00,296: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2021-02-09 22:37:00,296: log_options() 'clipboard_use_whitelist = True'
+INFO: 2021-02-09 22:37:00,296: log_options() 'clock_date_font = Ubuntu Condensed, 30'
+INFO: 2021-02-09 22:37:00,296: log_options() 'clock_enabled = False'
+INFO: 2021-02-09 22:37:00,296: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2021-02-09 22:37:00,296: log_options() 'clock_font = Ubuntu Condensed, 70'
+INFO: 2021-02-09 22:37:00,296: log_options() 'configfile = /home/michael/.config/variety/variety.conf'
+INFO: 2021-02-09 22:37:00,296: log_options() 'copyto_enabled = False'
+INFO: 2021-02-09 22:37:00,296: log_options() 'copyto_folder = Default'
+INFO: 2021-02-09 22:37:00,297: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2021-02-09 22:37:00,297: log_options() 'desired_color_enabled = False'
+INFO: 2021-02-09 22:37:00,297: log_options() 'download_folder = /home/michael/.config/variety/Downloaded'
+INFO: 2021-02-09 22:37:00,297: log_options() 'download_preference_ratio = 0.9'
+INFO: 2021-02-09 22:37:00,297: log_options() 'favorites_folder = /home/michael/.config/variety/Favorites'
+INFO: 2021-02-09 22:37:00,297: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2021-02-09 22:37:00,297: log_options() 'fetched_folder = /home/michael/.config/variety/Fetched'
+INFO: 2021-02-09 22:37:00,297: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-blur 120x40'], [False, 'Soft blur', '-blur 20x7'], [False, 'Oil painting', '-paint 8'], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2021-02-09 22:37:00,297: log_options() 'icon = Light'
+INFO: 2021-02-09 22:37:00,297: log_options() 'lightness_enabled = False'
+INFO: 2021-02-09 22:37:00,297: log_options() 'lightness_mode = 0'
+INFO: 2021-02-09 22:37:00,297: log_options() 'min_rating = 4'
+INFO: 2021-02-09 22:37:00,297: log_options() 'min_rating_enabled = False'
+INFO: 2021-02-09 22:37:00,298: log_options() 'min_size = 80'
+INFO: 2021-02-09 22:37:00,298: log_options() 'min_size_enabled = False'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quota_enabled = True'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quota_size = 1000'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quotes_authors = '
+INFO: 2021-02-09 22:37:00,298: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quotes_bg_opacity = 55'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quotes_change_enabled = False'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quotes_change_interval = 300'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quotes_enabled = False'
+INFO: 2021-02-09 22:37:00,298: log_options() 'quotes_favorites_file = /home/michael/.config/variety/favorite_quotes.txt'
+INFO: 2021-02-09 22:37:00,299: log_options() 'quotes_font = Bitstream Charter 30'
+INFO: 2021-02-09 22:37:00,299: log_options() 'quotes_hpos = 100'
+INFO: 2021-02-09 22:37:00,299: log_options() 'quotes_max_length = 250'
+INFO: 2021-02-09 22:37:00,299: log_options() 'quotes_tags = '
+INFO: 2021-02-09 22:37:00,299: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2021-02-09 22:37:00,299: log_options() 'quotes_text_shadow = False'
+INFO: 2021-02-09 22:37:00,299: log_options() 'quotes_vpos = 40'
+INFO: 2021-02-09 22:37:00,299: log_options() 'quotes_width = 70'
+INFO: 2021-02-09 22:37:00,299: log_options() 'safe_mode = False'
+INFO: 2021-02-09 22:37:00,299: log_options() 'slideshow_custom_enabled = False'
+INFO: 2021-02-09 22:37:00,299: log_options() 'slideshow_custom_folder = /home/michael/Pictures'
+INFO: 2021-02-09 22:37:00,299: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2021-02-09 22:37:00,299: log_options() 'slideshow_fade = 0.4'
+INFO: 2021-02-09 22:37:00,299: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2021-02-09 22:37:00,300: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2021-02-09 22:37:00,300: log_options() 'slideshow_monitor = All'
+INFO: 2021-02-09 22:37:00,300: log_options() 'slideshow_pan = 0.05'
+INFO: 2021-02-09 22:37:00,300: log_options() 'slideshow_seconds = 6.0'
+INFO: 2021-02-09 22:37:00,300: log_options() 'slideshow_sort_order = Random'
+INFO: 2021-02-09 22:37:00,300: log_options() 'slideshow_sources_enabled = True'
+INFO: 2021-02-09 22:37:00,300: log_options() 'slideshow_zoom = 0.2'
+INFO: 2021-02-09 22:37:00,300: log_options() 'smart_enabled = False'
+INFO: 2021-02-09 22:37:00,300: log_options() 'smart_notice_shown = False'
+INFO: 2021-02-09 22:37:00,300: log_options() 'smart_register_shown = False'
+INFO: 2021-02-09 22:37:00,300: log_options() 'sources = [[True, 'favorites', 'The Favorites folder'], [True, 'fetched', 'The Fetched folder'], [True, 'folder', '/usr/share/backgrounds'], [True, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [True, 'apod', "NASA's Astronomy Picture of the Day"], [True, 'bing', 'Bing Photo of the Day'], [True, 'chromeos', 'Chrome OS Wallpapers'], [True, 'desktoppr', 'Random wallpapers from Desktoppr.co'], [True, 'earthview', 'Google Earth View Wallpapers'], [True, 'unsplash', 'High-resolution photos from Unsplash.com']]'
+INFO: 2021-02-09 22:37:00,300: log_options() 'stats_enabled = True'
+INFO: 2021-02-09 22:37:00,301: log_options() 'stats_notice_shown = False'
+INFO: 2021-02-09 22:37:00,301: log_options() 'sync_enabled = True'
+INFO: 2021-02-09 22:37:00,301: log_options() 'use_landscape_enabled = True'
+INFO: 2021-02-09 22:37:00,301: reload_config() 'No need to clear prepared queue'
+INFO: 2021-02-09 22:37:00,301: update_indicator() 'Setting file info to: /home/michael/.config/variety/Downloaded/Unsplash/photo-1612286350087-116a6b734781.jpg'
+INFO: 2021-02-09 22:37:00,313: load_last_change_time() 'Change interval < 6 hours, ignore persisted last_change_time, wait initially the whole interval: 300'
+INFO: 2021-02-09 22:37:00,313: update_indicator() 'Setting file info to: /home/michael/.config/variety/Downloaded/Unsplash/photo-1612286350087-116a6b734781.jpg'
+INFO: 2021-02-09 22:37:00,316: regular_change_thread() 'regular_change thread running'
+INFO: 2021-02-09 22:37:00,317: prepare_thread() 'Prepare thread running'
+INFO: 2021-02-09 22:37:00,317: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2021-02-09 22:37:00,317: prepare_thread() 'Preparing some images'
+INFO: 2021-02-09 22:37:00,322: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-02-09 22:37:00,322: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-02-09 22:37:00,322: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-02-09 22:37:00,322: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-02-09 22:37:00,323: download_one() 'Flickr: Downloading an image, config: user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'
+INFO: 2021-02-09 22:37:00,323: download_one() 'Flickr: Queue size: 0'
+INFO: 2021-02-09 22:37:00,323: get_throttling() 'Flickr: parsing serverside options'
+INFO: 2021-02-09 22:37:00,323: get_throttling() 'Could not parse Flickr serverside options, using defaults 120, 20'
+INFO: 2021-02-09 22:37:00,323: download_one() 'Flickr: Filling queue'
+INFO: 2021-02-09 22:37:00,323: fetch() 'Making flickr API call: https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00'
+INFO: 2021-02-09 22:37:00,422: do_set_wp() 'Calling do_set_wp with /home/michael/.config/variety/Downloaded/Unsplash/photo-1612286350087-116a6b734781.jpg, time: 1612939020.4221432'
+INFO: 2021-02-09 22:37:00,440: update_indicator_icon() 'Creating indicator'
+INFO: 2021-02-09 22:37:00,825: update_indicator() 'Setting file info to: /home/michael/.config/variety/Downloaded/Unsplash/photo-1612286350087-116a6b734781.jpg'
+WARNING: 2021-02-09 22:37:00,866: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
+INFO: 2021-02-09 22:37:00,875: create_indicator() 'indicator backend: AyatanaAppIndicator3'
+INFO: 2021-02-09 22:37:00,959: set_from_theme_icon() 'Showing indicator icon variety-indicator from GTK theme'
+ERROR: 2021-02-09 22:37:01,141: image_ok() 'Error in image_ok for file /usr/share/backgrounds/greybird.svg'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/variety/VarietyWindow.py", line 1754, in image_ok
+    i = PILImage.open(img)
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 2861, in open
+    raise UnidentifiedImageError(
+PIL.UnidentifiedImageError: cannot identify image file '/usr/share/backgrounds/greybird.svg'
+INFO: 2021-02-09 22:37:01,192: prepare_thread() 'After search prepared buffer contains 45 images'
+INFO: 2021-02-09 22:37:02,213: reload() 'Reloading preferences dialog'
+INFO: 2021-02-09 22:37:03,193: trigger_download() 'Triggering download thread to check if download needed'
+ERROR: 2021-02-09 22:37:05,825: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f344c223340>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.flickr.com', port=443): Max retries exceeded with url: /services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f344c223340>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/variety/VarietyWindow.py", line 1156, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3/dist-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3/dist-packages/variety/FlickrDownloader.py", line 158, in fill_queue
+    resp = FlickrDownloader.fetch(call)
+  File "/usr/lib/python3/dist-packages/variety/FlickrDownloader.py", line 73, in fetch
+    return Util.fetch_json(call)
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 612, in request
+    r = requests.request(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.flickr.com', port=443): Max retries exceeded with url: /services/rest/?method=flickr.photos.search&api_key=0553a848c09bcfd21d3a984d9408c04e&per_page=500&tag_mode=all&format=json&nojsoncallback=1&user_id=93647178@N00 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f344c223340>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+INFO: 2021-02-09 22:37:06,839: get_throttling() 'Chrome OS Wallpapers: parsing serverside options'
+INFO: 2021-02-09 22:37:06,839: get_throttling() 'Could not parse Chrome OS Wallpapers serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:06,839: get_throttling() 'Chrome OS Wallpapers: parsing serverside options'
+INFO: 2021-02-09 22:37:06,839: get_throttling() 'Could not parse Chrome OS Wallpapers serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:06,840: download_one() 'Chrome OS Wallpapers: Downloading an image, config: None'
+INFO: 2021-02-09 22:37:06,840: download_one() 'Chrome OS Wallpapers: Queue size: 0'
+INFO: 2021-02-09 22:37:06,840: get_throttling() 'Chrome OS Wallpapers: parsing serverside options'
+INFO: 2021-02-09 22:37:06,840: get_throttling() 'Could not parse Chrome OS Wallpapers serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:06,840: download_one() 'Chrome OS Wallpapers: Filling queue'
+ERROR: 2021-02-09 22:37:09,667: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/variety/VarietyWindow.py", line 1156, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3/dist-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/ChromeOSWallpapersDownloader.py", line 54, in fill_queue
+    manifest = Util.fetch_json(MANIFEST_URL)
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 622, in request
+    r.raise_for_status()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://storage.googleapis.com/chromeos-wallpaper-public/manifest_en.json
+INFO: 2021-02-09 22:37:10,671: get_throttling() 'Desktoppr.co: parsing serverside options'
+INFO: 2021-02-09 22:37:10,671: get_throttling() 'Could not parse Desktoppr.co serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:10,672: get_throttling() 'Desktoppr.co: parsing serverside options'
+INFO: 2021-02-09 22:37:10,672: get_throttling() 'Could not parse Desktoppr.co serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:10,672: download_one() 'Desktoppr.co: Downloading an image, config: None'
+INFO: 2021-02-09 22:37:10,673: download_one() 'Desktoppr.co: Queue size: 0'
+INFO: 2021-02-09 22:37:10,673: get_throttling() 'Desktoppr.co: parsing serverside options'
+INFO: 2021-02-09 22:37:10,673: get_throttling() 'Could not parse Desktoppr.co serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:10,673: download_one() 'Desktoppr.co: Filling queue'
+ERROR: 2021-02-09 22:37:10,910: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f3434185970>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f3434185970>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/variety/VarietyWindow.py", line 1156, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3/dist-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/DesktopprDownloader.py", line 57, in fill_queue
+    response = Util.fetch_json("https://api.desktoppr.co/1/wallpapers/random", verify=False)
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 612, in request
+    r = requests.request(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.desktoppr.co', port=443): Max retries exceeded with url: /1/wallpapers/random (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f3434185970>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO: 2021-02-09 22:37:11,915: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2021-02-09 22:37:11,915: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2021-02-09 22:37:11,915: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2021-02-09 22:37:11,915: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2021-02-09 22:37:11,915: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2021-02-09 22:37:11,915: download_one() 'Earth View: Queue size: 0'
+INFO: 2021-02-09 22:37:11,915: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2021-02-09 22:37:11,916: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2021-02-09 22:37:11,916: download_one() 'Earth View: Filling queue'
+ERROR: 2021-02-09 22:37:11,931: download_one_from() 'Could not download wallpaper:'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7f34342955e0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /limhenry/earthview/3cd868a932cd652c4373c0f6ea8618a96b08be4e/wallpaper%20changer/data.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f34342955e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/variety/VarietyWindow.py", line 1156, in download_one_from
+    file = downloader.download_one()
+  File "/usr/lib/python3/dist-packages/variety/plugins/downloaders/DefaultDownloader.py", line 141, in download_one
+    items = self.fill_queue()
+  File "/usr/lib/python3/dist-packages/variety/plugins/builtin/downloaders/EarthviewDownloader.py", line 57, in fill_queue
+    queue = Util.fetch_json(DATA_URL)
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 612, in request
+    r = requests.request(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /limhenry/earthview/3cd868a932cd652c4373c0f6ea8618a96b08be4e/wallpaper%20changer/data.json (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f34342955e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO: 2021-02-09 22:37:12,935: get_throttling() 'Bing: parsing serverside options'
+INFO: 2021-02-09 22:37:12,935: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:12,935: get_throttling() 'Bing: parsing serverside options'
+INFO: 2021-02-09 22:37:12,935: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:12,935: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2021-02-09 22:37:12,936: download_one() 'Bing: Queue size: 0'
+INFO: 2021-02-09 22:37:12,936: get_throttling() 'Bing: parsing serverside options'
+INFO: 2021-02-09 22:37:12,936: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:12,936: download_one() 'Bing: Filling queue'
+INFO: 2021-02-09 22:37:13,851: download_one() 'Bing: Queue populated with 8 URLs'
+INFO: 2021-02-09 22:37:13,852: save_locally() 'Origin URL: https://www.bing.com/search?q=%E5%86%85%E5%A7%86%E9%B2%81%E7%89%B9%E5%B1%B1&form=hpcapt&mkt=zh-cn'
+INFO: 2021-02-09 22:37:13,852: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.MountNemrut_ZH-CN4681788604_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2021-02-09 22:37:13,852: save_locally() 'Local path: /home/michael/.config/variety/Downloaded/Bing/OHR.MountNemrut_ZH-CN4681788604_1920x1080.jpg'
+INFO: 2021-02-09 22:37:13,852: save_locally() 'File already exists, skip downloading'
+INFO: 2021-02-09 22:37:14,855: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-02-09 22:37:14,855: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:14,855: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-02-09 22:37:14,856: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:14,856: download_one() 'NASA Astro Pic of the Day: Downloading an image, config: None'
+INFO: 2021-02-09 22:37:14,856: download_one() 'NASA Astro Pic of the Day: Queue size: 0'
+INFO: 2021-02-09 22:37:14,856: get_throttling() 'NASA Astro Pic of the Day: parsing serverside options'
+INFO: 2021-02-09 22:37:14,856: get_throttling() 'Could not parse NASA Astro Pic of the Day serverside options, using defaults None, None'
+INFO: 2021-02-09 22:37:14,856: download_one() 'NASA Astro Pic of the Day: Filling queue'
+INFO: 2021-02-09 22:37:14,856: fill_queue() 'Filling APOD queue from Archive'
+INFO: 2021-02-09 22:37:17,430: set_wallpaper() 'Calling set_wallpaper with /home/michael/.config/variety/Downloaded/Bing/OHR.VosgesBioReserve_ZH-CN4762694302_1920x1080.jpg'
+INFO: 2021-02-09 22:37:17,431: do_set_wp() 'Calling do_set_wp with /home/michael/.config/variety/Downloaded/Bing/OHR.VosgesBioReserve_ZH-CN4762694302_1920x1080.jpg, time: 1612939037.4319549'
+INFO: 2021-02-09 22:37:17,445: prepare_thread() 'Prepared buffer contains 45 images'
+INFO: 2021-02-09 22:37:17,470: update_indicator() 'Setting file info to: /home/michael/.config/variety/Downloaded/Bing/OHR.VosgesBioReserve_ZH-CN4762694302_1920x1080.jpg'
+INFO: 2021-02-09 22:37:17,475: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2021-02-09 22:37:19,432: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2021-02-09 22:37:19,449: trigger_download() 'Triggering download thread to check if download needed'
+INFO: 2021-02-09 22:37:20,350: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2021-02-09 22:37:25,369: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f344d2f9c70>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f344d2f9c70>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/variety/VarietyWindow.py", line 1087, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 612, in request
+    r = requests.request(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f344d2f9c70>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+INFO: 2021-02-09 22:37:33,260: download_one() 'NASA Astro Pic of the Day: Queue populated with 730 URLs'
+INFO: 2021-02-09 22:37:33,261: download_queue_item() 'APOD URL: http://apod.nasa.gov/apod/ap190407.html'
+INFO: 2021-02-09 22:37:37,795: download_queue_item() 'Image URL: http://apod.nasa.gov/apod/image/1904/scorpio_guisard_1328.jpg'
+INFO: 2021-02-09 22:37:37,796: save_locally() 'Origin URL: http://apod.nasa.gov/apod/ap190407.html'
+INFO: 2021-02-09 22:37:37,797: save_locally() 'Image URL: http://apod.nasa.gov/apod/image/1904/scorpio_guisard_1328.jpg'
+INFO: 2021-02-09 22:37:37,797: save_locally() 'Local path: /home/michael/.config/variety/Downloaded/nasa_apod/scorpio_guisard_1328.jpg'
+INFO: 2021-02-09 22:37:55,381: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2021-02-09 22:38:00,392: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f34341238b0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f34341238b0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/variety/VarietyWindow.py", line 1087, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 643, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3/dist-packages/variety/Util.py", line 612, in request
+    r = requests.request(
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f34341238b0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
