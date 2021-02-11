@@ -99,7 +99,7 @@ make && sudo make install
 sudo cpan -i App::rainbarf
 
 # install zsh
-sudo apt-get install zsh -y
+sudo apt-get install zsh neofetch -y
 
 # copy the configuration into .config folder
 cd ${selfpath}
