@@ -316,11 +316,11 @@ exec_always albert
 # exec --no-startup-id start_conky_green
 exec --no-startup-id ff-theme-util
 exec --no-startup-id fix_xcursor
-exec --no-startup-id ~/.config/i3/run-mailsync.sh
-exec variety
+#exec --no-startup-id ~/.config/i3/run-mailsync.sh
+#####exec variety
 exec fcitx
-#exec_always --no-startup-id ~/.config/i3/tap-to-click.sh
-exec --no-startup-id ~/.config/i3/inverse-scroll.sh
+######exec_always --no-startup-id ~/.config/i3/tap-to-click.sh
+######exec --no-startup-id ~/.config/i3/inverse-scroll.sh
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

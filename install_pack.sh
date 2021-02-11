@@ -95,8 +95,19 @@ cd build
 cmake ../
 make && sudo make install
 
+# install rainbarf
+sudo cpan -i App::rainbarf
+
+# install zsh
+sudo apt-get install zsh -y
+
 # copy the configuration into .config folder
 cd ${selfpath}
 cp -rf .config ~/
 ln -s -f ${selfpath}/tmuxconfig/.tmux.conf ~/.tmux.conf
 cp ${selfpath}/tmuxconfig/.tmux.conf.local ~/
+
+zsh
+echo "alias myvim='~/Documents/main/unix/vim.sh'" > .zshrc
+echo "alias mygvim='~/Documents/main/unix/gvim.sh'" > .zshrc
+source ~/.config/zsh/zshrc
