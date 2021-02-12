@@ -2,27 +2,30 @@
 set -o nounset
 selfpath=$(cd "$(dirname) "$0")"; pwd)
 
-sudo apt-get install -y libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 liblua5.1-0-dev libperl-dev git dos2unix sed cscope id-utils exuberant-ctags fontconfig language-pack-zh-hans libncurses5-dev exuberant-ctags silversearcher-ag gawk libncurses5 libtinfo5 
-sudo apt-get install -y python3-dev python3-pip python3-setuptools curl fctix
+sudo apt-get install -y libncurses5-dev libgtk2.0-dev libatk1.0-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev ruby-dev lua5.1 liblua5.1-0-dev libperl-dev git dos2unix sed cscope id-utils exuberant-ctags fontconfig language-pack-zh-hans libncurses5-dev exuberant-ctags silversearcher-ag gawk libncurses5 libtinfo5 automake
+sudo apt-get install -y python3-dev python3-pip python3-setuptools curl autotools-dev m4 autoconf2.13 autoconf-archive gnu-standards autoconf-doc libtool
 
 #install the fuck application
 sudo pip3 install thefuck
 
 # install albert
+echo "installing albert....."
 echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
 curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg > /dev/null
 sudo apt-get update
-sudo apt-get install albert
+sudo apt-get install albert -y
+echo "albert has been installed"
 
 # install ranger
-if [ !-d "~/Documents/ranger" ]; then
+if [ ! -d "~/Documents/ranger" ]; then
     cd ~/Documents
     git clone https://github.com/ranger/ranger.git
 fi
 cd ~/Documents/ranger
 git pull
-sudo apt-get install w3m w3m-img
+sudo apt-get install w3m w3m-img -y
 sudo pip3 install ueberzug
+sudo python setup.py install --optimize=1 --record=install_log.txt
 
 pythonName=`find /usr/lib/python3.* -maxdepth 0 -type d`
 if [[ ${pythonName} ]]; then
@@ -41,7 +44,7 @@ if [[ ${pythonName} ]]; then
 fi
 
 # install fzf application
-if [ !-d "~/.fzf" ]; then
+if [ ! -d "~/.fzf" ]; then
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 fi
 ~/.fzf/install
@@ -59,7 +62,7 @@ sudo apt-get install -y compton
 sudo apt-get install -y xfce4 xfce4-power-manager
 
 # install tmux
-if [ !-d "~/Documents/tmux" ]; then
+if [ ! -d "~/Documents/tmux" ]; then
     cd ~/Documents/
     git clone https://github.com/tmux/tmux.git
 fi
@@ -74,17 +77,18 @@ sudo make install
 sudo apt-get install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cd ~/Documents
-if [ !-d "alacritty" ]; then
+if [ ! -d "alacritty" ]; then
     git clone https://github.com/alacritty/alacritty.git
 fi
 cd alacritty
 sudo apt-get install -y fonts-firacode
+source ~/.bashrc
 cargo install alacritty
 
 # install polabar
-sudo apt-get install build-essential git cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
-sudo apt-get install libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
-if [ !-d "~/Documents/polybar" ]; then
+sudo apt-get install -y build-essential git cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
+sudo apt-get install -y libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
+if [ ! -d "~/Documents/polybar" ]; then
     cd ~/Documents
     git clone --recursive https://github.com/polybar/polybar
 fi

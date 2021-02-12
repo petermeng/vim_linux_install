@@ -35,3 +35,5 @@ alias nt="sh -c 'cd $(pwd); st' > /dev/null 2>&1 &"
 alias ta='tmux a'
 alias t='tmux'
 alias lo='lsof -p $(fps) +w'
+alias myvim='~/Documents/main/unix/vim.sh'
+alias mygvim='~/Documents/main/unix/gvim.sh'

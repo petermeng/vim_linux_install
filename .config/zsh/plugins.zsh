@@ -4,6 +4,6 @@ if [[ ! -d $PLUG_DIR ]]; then
     wget https://raw.githubusercontent.com/zimfw/install/master/install.zsh 
     chmod 777 install.zsh
     zsh install.zsh
-	#rm ~/.zimrc
-	#ln -s ~/.config/zsh/zimrc ~/.zimrc
+	rm ~/.zimrc
+	ln -s ~/.config/zsh/zimrc ~/.zimrc
 fi
