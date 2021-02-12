@@ -317,8 +317,10 @@ exec_always albert
 exec --no-startup-id ff-theme-util
 exec --no-startup-id fix_xcursor
 #exec --no-startup-id ~/.config/i3/run-mailsync.sh
-#####exec variety
-exec fcitx
+exec variety
+exec --no-startup-id fcitx -r
+exec --no-startup-id sogou-qimpanel
+exec --no-startup-id fcitx-sogoupingyin
 ######exec_always --no-startup-id ~/.config/i3/tap-to-click.sh
 ######exec --no-startup-id ~/.config/i3/inverse-scroll.sh
 
